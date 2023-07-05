@@ -1,0 +1,25 @@
+{
+  "name": "laf-app",
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@mono/constants": "workspace:^",
+    "@mono/enums": "workspace:^"
+  },
+  "tsup": {
+    "entry": [
+      "functions/**/*.ts"
+    ],
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "noExternal": [
+      "@mono/constants",
+      "@mono/enums"
+    ],
+    "treeshake": true,
+    "clean": true
+  }
+}
