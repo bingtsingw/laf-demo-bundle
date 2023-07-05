@@ -1,9 +1,7 @@
 {
   "name": "@mono/enums",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.js"
-  },
+  "type": "module",
+  "main": "dist/index.js",
   "types": "./src/index.ts",
   "files": [
     "dist",
@@ -19,8 +17,7 @@
       "src/index.ts"
     ],
     "format": [
-      "esm",
-      "cjs"
+      "esm"
     ],
     "clean": true
   }
